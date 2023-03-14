@@ -30,7 +30,8 @@ body {
   width: 100vw;
   height: 100vh;
   color: black;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -169,7 +170,6 @@ nav .container .navbar-nav .navbar-list .navbar-item[data-active=true]:hover {
   font-family: var(--primary-font);
   margin-bottom: auto;
   padding-top: 1rem;
-  height: 100%;
 }
 .body .about {
   display: flex;
@@ -192,4 +192,124 @@ nav .container .navbar-nav .navbar-list .navbar-item[data-active=true]:hover {
   min-width: 512px;
   min-height: 288px;
   display: inline-block;
+}
+.body .our-team {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.body .our-team h2 {
+  letter-spacing: normal;
+}
+.body .our-team .hierarchy {
+  text-align: center;
+  letter-spacing: 5px;
+}
+.body .our-team .hierarchy h3 {
+  letter-spacing: normal;
+}
+.body .our-team .hierarchy .team-card {
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  background-clip: padding-box;
+  border: solid 3px lightgray;
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  letter-spacing: normal;
+}
+.body .our-team .hierarchy .team-card .portrait {
+  content: none;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: transparent;
+  width: 140px;
+  height: 140px;
+  background-size: 140px;
+  min-width: 140px;
+  min-height: 140px;
+  display: inline-block;
+  border-radius: 70px;
+  box-shadow: var(--box-shadow);
+}
+.body .our-team .hierarchy .team-card .about-member h3 {
+  font-family: var(--primary-font);
+  margin-bottom: 0;
+}
+.body .our-team .hierarchy .team-card .about-member p {
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.body .our-team .hierarchy .team-card .social {
+  border-top: 2px solid rgba(0, 0, 0, 0.0823529412);
+}
+.body .our-team .hierarchy .team-card .social .social-logo {
+  content: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: transparent;
+  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #292929;
+  color: white;
+}
+.footer .foot-contain {
+  display: flex;
+}
+.footer .foot-contain .foot-social {
+  flex-basis: 20%;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.footer .foot-contain .foot-social ul h3 {
+  font-family: var(--primary-font);
+}
+.footer .foot-contain .foot-social ul li {
+  list-style-type: none;
+  font-family: var(--secondary-font);
+  text-indent: 2em;
+  cursor: pointer;
+}
+.footer .foot-contain .foot-divider {
+  background-color: rgba(255, 255, 255, 0.062745098);
+  flex-basis: 0.1em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  color: transparent;
+}
+.footer .foot-contain .foot-links {
+  display: flex;
+}
+.footer .foot-contain .foot-links .column .link-contain ul h3 {
+  font-family: var(--primary-font);
+}
+.footer .foot-contain .foot-links .column .link-contain ul li {
+  font-family: var(--secondary-font);
+  list-style-type: none;
+  text-indent: 2em;
+  cursor: pointer;
+}
+.footer .footer-banner .foot-notes {
+  display: inline-block;
+  bottom: 0;
+  position: relative;
+}
+.footer .footer-link {
+  box-shadow: 0 0 inset rgb(0, 255, 179);
+  margin-left: 0;
+}
+.footer .footer-link:hover {
+  color: rgb(0, 255, 179);
+  box-shadow: 0.1em 0 inset rgb(0, 255, 179);
 }

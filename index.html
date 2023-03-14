@@ -27,10 +27,11 @@
         </div>
         <div class="navbar-nav">
           <ul class="navbar-list">
-            <li class="navbar-item" data-active="true">Home</li>
-            <li class="navbar-item">Projects</li>
-            <li class="navbar-item">About</li>
-            <li class="navbar-item">Volunteer</li>
+            <li class="navbar-item" onclick="openInternal()" data-active="true">
+              About us
+            </li>
+            <li class="navbar-item" onclick="openInternal()">Projects</li>
+            <li class="navbar-item" onclick="openInternal()">Volunteer</li>
 
             <!-- 
               When the current selected page is up, add this Attribute to the Navigation Item, excluding the Banner Logo 
@@ -45,7 +46,7 @@
       <div class="title">
         <div class="header-logo">.</div>
         <div class="text">
-          <h1>Landing Page</h1>
+          <h1>About us</h1>
           <p></p>
         </div>
       </div>
@@ -69,7 +70,130 @@
           <div class="about-image">.</div>
         </div>
       </div>
+
+      <div class="our-team">
+        <h2>Our Team</h2>
+        <div class="hierarchy">
+          <div class="leaders">
+            <h3>Leaders</h3>
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP-Tunn.png">.</div>
+              <div class="about-member">
+                <h3>Tundrabolt</h3>
+                <p>Owner</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-discord-4.svg');
+                  "
+                  onclick="openExternal('https://discord.gg/jZwXTpqZmF')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="members">
+            <h3>Members</h3>
+            <!--
+              Team Card Template:
+
+              <div class="team-card">
+              <div class="portrait" data-image="">.</div>
+              <div class="about-member">
+                <h3></h3>
+                <p></p>
+              </div>
+              <div class="social">
+                <div class="social-logo" style="background-image: url(''); cursor:default;" onclick="openExternal('')">.</div>
+              </div>
+            </div>
+            -->
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP-Sakura.png">.</div>
+              <div class="about-member">
+                <h3>Sakura</h3>
+                <p>Asset Design | Web Dev</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-youtube-9.svg');
+                  "
+                  onclick="openExternal('https://www.youtube.com/c/SakuraSedaia')"
+                >
+                  .
+                </div>
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-github-4.svg');
+                  "
+                  onclick="openExternal('https://github.com/SakuraSedaia')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="foot-contain">
+        <div class="foot-social">
+          <ul>
+            <h3>Social Media</h3>
+            <li class="footer-link" onclick="openInternal()">Youtube</li>
+            <li class="footer-link" onclick="openInternal()">Discord</li>
+          </ul>
+        </div>
+
+        <div class="foot-divider">.</div>
+
+        <div class="foot-links">
+          <div class="column">
+            <div class="link-contain">
+              <ul>
+                <h3>Internal Links</h3>
+                <li class="footer-link" onclick="openInternal()">About us</li>
+                <!-- Home Page -->
+                <li class="footer-link" onclick="openInternal()">
+                  Our Projects
+                </li>
+                <li class="footer-link" onclick="openInternal()">Volunteer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-banner">
+        <div class="foot-notes"></div>
+      </div>
     </div>
     <script src="scripts/script.js"></script>
+
+    <script>
+      // Assign Profile Pictures to Everyone in the Team's Section.
+      var teamCard = document.getElementsByClassName("team-card");
+      var i = 0;
+      while (i < teamCard.length) {
+        console.log(teamCard[i].childNodes[1]);
+        var imageName = teamCard[i].childNodes[1].getAttribute("data-image");
+        teamCard[i].childNodes[1].style.backgroundImage =
+          'url("assets/images/member-profiles/' + imageName.toString() + '")';
+        i++;
+      }
+      // [0].childNodes[1]
+    </script>
   </body>
 </html>
