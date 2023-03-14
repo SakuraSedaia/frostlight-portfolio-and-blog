@@ -1,21 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta lang="en-us">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frostlight Studios - Home</title>
-	<link href="css/indexe.css" rel="stylesheet" type="text/css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta lang="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frostlight Studios - Home</title>
+    <link href="css/index.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
 
-<body>
-<div class="container">
-  <div class="site-title">
-    <h1>Website is under development</h1>
-    <p>Release date is unknown, please be patient</p>
-  </div>
-</div>
+    <link
+      rel="shortcut icon"
+      href="assets/images/icons/Frostlight-Fox-Logo.ico"
+    />
+  </head>
 
-</body>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navbar-brand" onclick="openInternal('index.html')">
+          <div class="banner-logo">.</div>
+          <div class="banner-text">
+            Frostlight <br />
+            Studios
+          </div>
+        </div>
+        <div class="navbar-nav nav-hidden">
+          <ul class="navbar-list">
+            <li class="navbar-item" data-active="true">Home</li>
+            <li class="navbar-item">Projects</li>
+            <li class="navbar-item">About</li>
+            <li class="navbar-item">Volunteer</li>
+
+            <!-- 
+              When the current selected page is up, add this Attribute to the Navigation Item, excluding the Banner Logo 
+             
+             data-active="true"
+            -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="title pattern-diagonal-stripes-lg">
+        <div class="text">
+          <h1>Frostlight Studios</h1>
+          <p>Site in Development, please pardon the inconvenience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      In the meantime, please visit our <a href="https://discord.gg/jZwXTpqZmF">Discord</a> channel for further and regular updates about our projects.
+    </div>
+    <script src="scripts/script.js"></script>
+    
+  </body>
 </html>
