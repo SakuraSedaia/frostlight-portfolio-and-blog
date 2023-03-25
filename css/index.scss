@@ -215,21 +215,21 @@ nav {
             }
         }
 
-        .about-image {
-            content: none;
-            background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
-            background-repeat: no-repeat;
-            background-position: center center;
-            color: transparent;
-            margin-right: 10px;
-            $dimension: 512px;
-            $ratio: calc(16/9);
-            width: $dimension;
-            height: calc($dimension/$ratio);
-            background-size: $dimension;
-            min-width: $dimension;
-            min-height: calc($dimension/$ratio);
-            display: inline-block;
+        .abt-img-contain {
+            .about-image {
+                content: none;
+                background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                color: transparent;
+                margin-right: 10px;
+                width: 35vw;
+                height: calc(35vw/calc(16/9));
+                background-size: 35vw;
+                min-width: 35vw;
+                min-height: calc(35vw/calc(16/9));
+                display: inline-block;
+            }
         }
     }
 
@@ -240,16 +240,30 @@ nav {
 
         h2 {
             letter-spacing: normal;
+            text-align: center;
+        }
+
+        .h-divide {
+            height: .1em;
+            $margin: 30%;
+            margin-left: $margin;
+            margin-right: $margin;
+            background-color: #00000030;
+            border-radius: 5px;
         }
 
         .hierarchy {
             text-align: center;
             letter-spacing: 5px;
+            padding-bottom: 3rem;
 
             h3 {
                 letter-spacing: normal;
             }
 
+            .leaders {
+                padding-bottom: 2em;
+            }
 
             .team-card {
                 text-align: center;
@@ -392,5 +406,29 @@ nav {
             box-shadow: .1em 0 inset rgb(0, 255, 179);
         }
 
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .about-image {
+        content: none;
+        background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: transparent;
+        margin-right: 10px;
+        width: 15vw;
+        height: calc(15vw/calc(16/9));
+        background-size: 15vw;
+        min-width: 15vw;
+        min-height: calc(15vw/calc(16/9));
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .abt-img-contain {
+        opacity: 0%;
+        width: 0px;
     }
 }

@@ -179,18 +179,18 @@ nav .container .navbar-nav .navbar-list .navbar-item[data-active=true]:hover {
 .body .about .about-text p {
   text-indent: 1rem;
 }
-.body .about .about-image {
+.body .about .abt-img-contain .about-image {
   content: none;
   background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
   background-repeat: no-repeat;
   background-position: center center;
   color: transparent;
   margin-right: 10px;
-  width: 512px;
-  height: 288px;
-  background-size: 512px;
-  min-width: 512px;
-  min-height: 288px;
+  width: 35vw;
+  height: 19.6875vw;
+  background-size: 35vw;
+  min-width: 35vw;
+  min-height: 19.6875vw;
   display: inline-block;
 }
 .body .our-team {
@@ -199,13 +199,25 @@ nav .container .navbar-nav .navbar-list .navbar-item[data-active=true]:hover {
 }
 .body .our-team h2 {
   letter-spacing: normal;
+  text-align: center;
+}
+.body .our-team .h-divide {
+  height: 0.1em;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: rgba(0, 0, 0, 0.1882352941);
+  border-radius: 5px;
 }
 .body .our-team .hierarchy {
   text-align: center;
   letter-spacing: 5px;
+  padding-bottom: 3rem;
 }
 .body .our-team .hierarchy h3 {
   letter-spacing: normal;
+}
+.body .our-team .hierarchy .leaders {
+  padding-bottom: 2em;
 }
 .body .our-team .hierarchy .team-card {
   text-align: center;
@@ -312,4 +324,27 @@ nav .container .navbar-nav .navbar-list .navbar-item[data-active=true]:hover {
 .footer .footer-link:hover {
   color: rgb(0, 255, 179);
   box-shadow: 0.1em 0 inset rgb(0, 255, 179);
+}
+
+@media screen and (max-width: 1600px) {
+  .about-image {
+    content: none;
+    background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: transparent;
+    margin-right: 10px;
+    width: 15vw;
+    height: 8.4375vw;
+    background-size: 15vw;
+    min-width: 15vw;
+    min-height: 8.4375vw;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .abt-img-contain {
+    opacity: 0%;
+    width: 0px;
+  }
 }
