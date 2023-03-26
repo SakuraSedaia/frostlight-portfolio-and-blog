@@ -1,0 +1,93 @@
+/* Import CSS */
+@import url('header-footer.min.css');
+
+
+.body {
+    $margin: 7rem;
+    margin-left: $margin;
+    margin-right: $margin;
+    background-color: #f5f5f5;
+    font-family: var(--primary-font);
+    margin-bottom: auto;
+    padding-top: 1rem;
+
+    .section-divider {
+        $margin: 10rem;
+        margin-left: $margin;
+        margin-right: $margin;
+        $height: 3px;
+        height: 3px;
+        border-radius: calc($height/2);
+        overflow: hidden;
+        background-color: lightgray;
+        color: transparent;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .project-container {
+        $margin: 4rem;
+        margin-left: $margin;
+        margin-right: $margin;
+
+        .project-header {
+            .project-about {
+                h1 {
+                    font-family: var(--primary-font);
+                    font-family: "Open Sans";
+                }
+
+                h2 {
+                    font-family: var(--secondary-font);
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                }
+
+                p {
+                    font-family: var(--secondary-font);
+                }
+            }
+
+            /*
+            .abt-img-contain {
+                .about-image {
+                    content: none;
+                    background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    color: transparent;
+                    margin-right: 10px;
+                    width: 35vw;
+                    height: calc(35vw/calc(16/9));
+                    background-size: 35vw;
+                    min-width: 35vw;
+                    min-height: calc(35vw/calc(16/9));
+                    display: inline-block;
+                }
+            }
+            */
+
+        }
+
+
+    }
+
+    .social-promo {
+        $margin: 4rem;
+        margin-left: $margin;
+        margin-right: $margin;
+
+        h2 {
+            font-family: var(--primary-font);
+        }
+
+        p {
+            font-family: var(--secondary-font);
+        }
+
+        a {
+            font-family: var(--secondary-font);
+        }
+    }
+}

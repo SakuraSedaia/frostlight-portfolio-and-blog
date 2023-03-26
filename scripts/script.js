@@ -1,5 +1,5 @@
 function openInternal(url) {
-    window.open(url,"_self");
+    window.open(url, "_self");
 }
 
 function openExternal(url, trusted) {
