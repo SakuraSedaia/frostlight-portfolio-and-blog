@@ -6,13 +6,21 @@
     <meta lang="en-us" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frostlight Studios - Home</title>
-    <link href="css/index.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet" /> -->
 
     <link
       rel="shortcut icon"
       href="assets/images/icons/Frostlight-Fox-Logo.ico"
     />
+
+    <style>
+      .header {
+        background-image: url("assets/images/beginnings_tesers/2023-03-25_22.42.55.png");
+        background-size: cover;
+        background-position: center center;
+      }
+    </style>
   </head>
 
   <body>
@@ -25,12 +33,19 @@
             Studios
           </div>
         </div>
-        <div class="navbar-nav nav-hidden">
+        <div class="navbar-nav">
           <ul class="navbar-list">
-            <li class="navbar-item" data-active="true">Home</li>
-            <li class="navbar-item">Projects</li>
-            <li class="navbar-item">About</li>
-            <li class="navbar-item">Volunteer</li>
+            <li
+              class="navbar-item"
+              onclick="openInternal('index.html')"
+              data-active="true"
+            >
+              About us
+            </li>
+            <li class="navbar-item" onclick="openInternal('projects.html')">
+              Projects
+            </li>
+            <li class="navbar-item" onclick="openInternal('temp-volunteer/index.html')">Volunteer</li>
 
             <!-- 
               When the current selected page is up, add this Attribute to the Navigation Item, excluding the Banner Logo 
@@ -42,18 +57,279 @@
       </div>
     </nav>
     <div class="header">
-      <div class="title pattern-diagonal-stripes-lg">
+      <div class="title">
+        <div class="header-logo">.</div>
         <div class="text">
-          <h1>Frostlight Studios</h1>
-          <p>Site in Development, please pardon the inconvenience.</p>
+          <h1>About us</h1>
+          <p></p>
         </div>
       </div>
     </div>
 
     <div class="body">
-      In the meantime, please visit our <a href="https://discord.gg/jZwXTpqZmF">Discord</a> channel for further and regular updates about our projects.
+      <div class="about">
+        <div class="about-text">
+          <h1>Who are we?</h1>
+          <p>
+            Frostlight Studios is an independent animation collective spread
+            across 12 countries in 4 continents. We strive to rise from a humble
+            beginning to deliver content people will be invested in in the
+            present and nostalgic over in the future! From our beginning as a
+            small path branching off from the Knights of Ardonia studio, we have
+            evolved into an open and collaborative environment driven by our
+            dedication and ambition!
+          </p>
+        </div>
+        <div class="abt-img-contain">
+          <div class="about-image">.</div>
+        </div>
+      </div>
+
+      <div class="our-team">
+        <h2>Our Team</h2>
+        <div class="h-divide">.</div>
+        <div class="hierarchy">
+          <div class="leaders">
+            <h3>Leader</h3>
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP-Tunn.png">.</div>
+              <div class="about-member">
+                <h3>Tundrabolt</h3>
+                <p>Studio Lead</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-discord-4.svg');
+                  "
+                  onclick="openExternal('https://discord.gg/jZwXTpqZmF')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-divide">.</div>
+          <div class="members">
+            <h3>Members</h3>
+            <!--
+              Team Card Template:
+
+              <div class="team-card">
+              <div class="portrait" data-image="">.</div>
+              <div class="about-member">
+                <h3></h3>
+                <p></p>
+              </div>
+              <div class="social">
+                <div class="social-logo" style="background-image: url('');" onclick="openExternal('')">.</div>
+              </div>
+            </div>
+            -->
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP-Sakura.png">.</div>
+              <div class="about-member">
+                <h3>Sakura</h3>
+                <p>Asset Design | Web Dev</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-youtube-9.svg');
+                  "
+                  onclick="openExternal('https://www.youtube.com/c/SakuraSedaia')"
+                >
+                  .
+                </div>
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-github-4.svg');
+                  "
+                  onclick="openExternal('https://github.com/SakuraSedaia')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP_Vapor.png">.</div>
+              <div class="about-member">
+                <h3>Vapor</h3>
+                <p>Modeller | Designer</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-youtube-9.svg');
+                  "
+                  onclick="openExternal('https://www.youtube.com/channel/UCTUAdtfkiJ0D6XH5HwrdgVQ')"
+                >
+                  .
+                </div>
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-instagram-14.svg');
+                  "
+                  onclick="openExternal('https://www.instagram.com/cloudl3ss_sky/')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP_Cloud.png">.</div>
+              <div class="about-member">
+                <h3>Cloudless Sky</h3>
+                <p>Builder | Artist</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-twitter-4.svg');
+                  "
+                  onclick="openExternal('https://www.instagram.com/cloudl3ss_sky/')"
+                >
+                  .
+                </div>
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-youtube-9.svg');
+                  "
+                  onclick="openExternal('https://www.youtube.com/channel/UCTUAdtfkiJ0D6XH5HwrdgVQ')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP_Megste.png">.</div>
+              <div class="about-member">
+                <h3>Megste</h3>
+                <p>Animator</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="
+                    background-image: url('assets/vectors/SVG/iconmonstr-youtube-9.svg');
+                  "
+                  onclick="openExternal('https://www.youtube.com/@MegsteStudios/videos')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP_Fupper.png">.</div>
+              <div class="about-member">
+                <h3>Fupper</h3>
+                <p>Animator</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="background-image: url(''); cursor: default"
+                  onclick="openExternal('')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="portrait" data-image="MP_Combust.png">.</div>
+              <div class="about-member">
+                <h3>Combust</h3>
+                <p>Animator | Modeller</p>
+              </div>
+              <div class="social">
+                <div
+                  class="social-logo"
+                  style="background-image: url(''); cursor: default"
+                  onclick="openExternal('')"
+                >
+                  .
+                </div>
+              </div>
+            </div>
+
+              <div class="team-card">
+              <div class="portrait" data-image="MP_Zevryan.gif">.</div>
+              <div class="about-member">
+                <h3>Zevryan</h3>
+                <p>Music Production</p>
+              </div>
+              <div class="social">
+                <div class="social-logo" style="background-image: url('assets/vectors/SVG/iconmonstr-youtube-9.svg');" onclick="openExternal('https://www.youtube.com/channel/UCkyk7s8F0GK6j09IlSvgRZQ')">.</div>
+              </div>
+            </div>
+            <!-- End Team Cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="foot-contain">
+        <div class="foot-social">
+          <ul>
+            <h3>Social Media</h3>
+            <li class="footer-link" onclick="openInternal()">Youtube</li>
+            <li class="footer-link" onclick="openInternal()">Discord</li>
+          </ul>
+        </div>
+
+        <div class="foot-divider">.</div>
+
+        <div class="foot-links">
+          <div class="column">
+            <div class="link-contain">
+              <ul>
+                <h3>Internal Links</h3>
+                <li class="footer-link" onclick="openInternal()">About us</li>
+                <!-- Home Page -->
+                <li class="footer-link" onclick="openInternal()">
+                  Our Projects
+                </li>
+                <li class="footer-link" onclick="openInternal()">Volunteer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-banner">
+        <div class="foot-notes"></div>
+      </div>
     </div>
     <script src="scripts/script.js"></script>
-    
+
+    <script>
+      // Assign Profile Pictures to Everyone in the Team's Section.
+      var teamCard = document.getElementsByClassName("team-card");
+      var i = 0;
+      while (i < teamCard.length) {
+        console.log(teamCard[i].childNodes[1]);
+        var imageName = teamCard[i].childNodes[1].getAttribute("data-image");
+        teamCard[i].childNodes[1].style.backgroundImage =
+          'url("assets/images/member-profiles/' + imageName.toString() + '")';
+        i++;
+      }
+      // [0].childNodes[1]
+    </script>
   </body>
 </html>

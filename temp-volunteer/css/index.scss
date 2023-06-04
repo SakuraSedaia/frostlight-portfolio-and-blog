@@ -1,0 +1,189 @@
+/* CSS Document */
+
+@charset "utf-8";
+/* Import fonts */
+@import url("https://sakura-sedaia.com/assets/fonts/fonts.css");
+
+:root {
+    /* Extra's to add onto the Glass Theme, imported from SoW Skin Server page */
+    /* Fonts */
+    --primary-font: "Source Sans Pro";
+    --secondary-font: "Open Sans";
+    --minecraft-font: "Minecraft";
+    /* Transition Durations */
+    --tgl-transition: 100ms;
+    --login-field-transition: 240ms;
+    --nav-transition: 200ms;
+    /* Other fields */
+    --radius-md: 10px;
+    --radius-sm: 5px;
+    --box-shadow: 0px 3px 5px -1px #00000033, 0px 5px 8px 0px #00000024, 0px 1px 14px 0px #0000001f;
+    --margin-base: 1in;
+    --blur: 25px;
+
+
+}
+
+* {
+    transition-duration: 100ms;
+}
+
+/* Global Styles */
+html,
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    overflow: hidden;
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+nav {
+    $nav-height: 44px;
+    position: sticky;
+    align-items: center;
+    z-index: 0;
+    padding: 0px;
+    box-shadow: 0 3px 40px black;
+
+    .container {
+
+        display: flex;
+        $margin: 3rem;
+        margin: 0px;
+        margin-left: $margin;
+        margin-right: $margin;
+
+        .navbar-brand {
+            width: 190px;
+            margin-right: auto;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            height: $nav-height;
+            display: flex;
+            font-family: "Noto Sans";
+
+            .banner-logo {
+                content: none;
+                background-image: url("../assets/vectors/SVG/Frostlight-Fox-Logo.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                color: transparent;
+                margin-right: 10px;
+                width: 44px;
+                height: 44px;
+                min-width: 44px;
+                display: inline-block;
+            }
+        }
+        .nav-hidden {
+            display: none;
+        }
+        .navbar-nav {
+            .navbar-list {
+                list-style-position: inside;
+                display: flex;
+                margin: 0;
+
+                .navbar-item {
+                    list-style-type: none;
+                    display: inline-block;
+                    background-color: #dfdfdf;
+                    width: 100px;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: $nav-height;
+                    color: #292929;
+                    text-decoration: none;
+                    font-family: var(--secondary-font);
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+
+                    box-shadow: 0em 0em inset rgb(0, 255, 179), 0 0em inset #dfdfdf;
+
+
+
+                    &:hover {
+                        box-shadow: 0em -.15em inset rgb(0, 255, 179), 0 3em inset #818181;
+                        color: rgb(0, 255, 179);
+                        text-decoration: none;
+
+                    }
+
+                    &[data-active="true"] {
+                        box-shadow: 0em -.3em inset rgb(0, 183, 255), 0 0em inset #818181;
+
+                        &:hover {
+                            box-shadow: 0em -.15em inset rgb(0, 255, 179), 0 3em inset #818181;
+                            color: rgb(0, 255, 179);
+                            text-decoration: none;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.header {
+    background-image: url("../assets/images/Final_Render_V2.png");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    height: auto;
+    $padding: 6rem;
+    padding-top: $padding;
+    padding-bottom: $padding;
+
+    .title {
+        text-align: center;
+        width: 40%;
+        min-width: 400px;
+        display: inline-block;
+        box-shadow: var(--box-shadow);
+        border-radius: var(--radius-sm);
+        
+        backdrop-filter: blur(10px);
+
+        color: yellow;
+        background-color: black;
+
+        .text {
+            background-color: black;
+            margin: .3in;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            h1 {
+                font-family: var(--primary-font);
+                color: #dfdfdf;
+            }
+
+            p {
+                font-family: var(--secondary-font);
+                color: #c7c7c7;
+            }
+        }
+    }
+
+
+}
+
+.body {
+    $margin: 5rem;
+    margin-left: $margin;
+    margin-right: $margin;
+    background-color: #f5f5f5;
+    padding-left: 4rem;
+    font-family: var(--primary-font);
+    margin-bottom: auto;
+    padding-top: 1rem;
+    height: 100%;
+}

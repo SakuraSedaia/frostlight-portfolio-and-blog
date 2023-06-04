@@ -1,0 +1,171 @@
+/* CSS Document */
+@charset "utf-8";
+/* Import CSS */
+@import url('header-footer.css');
+
+.body {
+    $margin: 7rem;
+    margin-left: $margin;
+    margin-right: $margin;
+    background-color: #f5f5f5;
+    font-family: var(--primary-font);
+    margin-bottom: auto;
+    padding-top: 1rem;
+
+    .about {
+        display: flex;
+        $margin: 4rem;
+        margin-right: $margin;
+        margin-left: $margin;
+
+        .about-text {
+
+            p {
+                text-indent: 1rem;
+            }
+        }
+
+        .abt-img-contain {
+            padding-left: 10px;
+            .about-image {
+                content: none;
+                background-image: url("../images/FrostlightMountainSnow-TeamPhoto.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                color: transparent;
+                margin-right: 10px;
+                width: 35vw;
+                height: calc(35vw/calc(16/9));
+                background-size: 35vw;
+                min-width: 35vw;
+                min-height: calc(35vw/calc(16/9));
+                display: inline-block;
+                border-radius: 5px;
+                box-shadow: var(--box-shadow);
+            }
+        }
+    }
+
+    .our-team {
+        $margin: 4rem;
+        margin-left: $margin;
+        margin-right: $margin;
+
+        h2 {
+            letter-spacing: normal;
+            text-align: center;
+        }
+
+        .h-divide {
+            height: .1em;
+            $margin: 30%;
+            margin-left: $margin;
+            margin-right: $margin;
+            background-color: #00000030;
+            border-radius: 5px;
+        }
+
+        .hierarchy {
+            text-align: center;
+            letter-spacing: 5px;
+            padding-bottom: 3rem;
+
+            h3 {
+                letter-spacing: normal;
+            }
+
+            .leaders {
+                padding-bottom: 2em;
+            }
+
+            .team-card {
+                text-align: center;
+                width: 180px;
+                padding: 10px;
+                border-radius: var(--radius-md);
+                $border: 3px;
+                background-clip: padding-box;
+                border: solid $border lightgray;
+                box-sizing: border-box;
+                box-shadow: var(--box-shadow);
+                display: inline-block;
+                letter-spacing: normal;
+
+                .portrait {
+                    content: none;
+                    background-image: url("");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    color: transparent;
+                    $dimension: 140px;
+                    $ratio: calc(1/1);
+                    width: $dimension;
+                    height: calc($dimension/$ratio);
+                    background-size: $dimension;
+                    min-width: $dimension;
+                    min-height: calc($dimension/$ratio);
+                    display: inline-block;
+                    border-radius: calc($dimension/2);
+                    box-shadow: var(--box-shadow);
+                }
+
+                .about-member {
+                    h3 {
+                        font-family: var(--primary-font);
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        line-height: 1em;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .social {
+                    border-top: 2px solid #00000015;
+
+                    .social-logo {
+                        content: none;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        color: transparent;
+                        margin-top: 5px;
+                        $dimension: 24px;
+                        width: $dimension;
+                        height: $dimension;
+                        min-width: $dimension;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    .about-image {
+        content: none;
+        background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: transparent;
+        margin-right: 10px;
+        width: 15vw;
+        height: calc(15vw/calc(16/9));
+        background-size: 15vw;
+        min-width: 15vw;
+        min-height: calc(15vw/calc(16/9));
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .abt-img-contain {
+        opacity: 0%;
+        width: 0px;
+    }
+}
