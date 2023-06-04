@@ -70,7 +70,7 @@ nav {
 
             .banner-logo {
                 content: none;
-                background-image: url("../assets/vectors/SVG/Frostlight-Fox-Logo.svg");
+                background-image: url("../vectors/SVG/Frostlight-Fox-Logo.svg");
                 background-repeat: no-repeat;
                 background-position: center center;
                 color: transparent;
@@ -253,6 +253,19 @@ nav {
             display: inline-block;
             bottom: 0;
             position: relative;
+            padding-left: 5rem;
+            padding-right: 5rem;
+
+            a {
+                box-shadow: 0 0 inset rgb(0, 255, 179);
+            margin-left: 0;
+
+        &:hover {
+            color: rgb(0, 255, 179);
+            box-shadow: 0 -.1em inset rgb(0, 255, 179);
+            cursor: pointer;
+        }
+            }
         }
     }
 
@@ -263,6 +276,7 @@ nav {
         &:hover {
             color: rgb(0, 255, 179);
             box-shadow: .1em 0 inset rgb(0, 255, 179);
+            cursor: pointer;
         }
 
     }
