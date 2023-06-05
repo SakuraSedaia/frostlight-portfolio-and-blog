@@ -69,13 +69,17 @@
             text-align: center;
             letter-spacing: 5px;
             padding-bottom: 3rem;
+            
+            line-height: 100px;
 
             h3 {
                 letter-spacing: normal;
+                line-height: normal;
             }
 
             .leaders {
                 padding-bottom: 2em;
+                line-height: normal;
             }
 
             .team-card {
@@ -90,6 +94,8 @@
                 box-shadow: var(--box-shadow);
                 display: inline-block;
                 letter-spacing: normal;
+                
+                line-height: normal;
 
                 .portrait {
                     content: none;
