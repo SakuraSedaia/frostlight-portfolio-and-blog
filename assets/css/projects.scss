@@ -1,111 +1,207 @@
 /* Import CSS */
-@import url('header-footer.css');
-
+@import url("header-footer.css");
 
 .body {
-    $margin: 7rem;
+  $margin: 7rem;
+  margin-left: $margin;
+  margin-right: $margin;
+  background-color: #f5f5f5;
+  font-family: var(--primary-font);
+  margin-bottom: auto;
+  padding-top: 1rem;
+
+  .section-divider {
+    $margin: 10rem;
     margin-left: $margin;
     margin-right: $margin;
-    background-color: #f5f5f5;
-    font-family: var(--primary-font);
-    margin-bottom: auto;
-    padding-top: 1rem;
+    $height: 3px;
+    height: 3px;
+    border-radius: calc($height/2);
+    overflow: hidden;
+    background-color: rgb(141, 141, 141);
+    margin-bottom: 1rem;
+    color: transparent;
+    cursor: default;
+    pointer-events: none;
+  }
 
-    .section-divider {
-        $margin: 10rem;
-        margin-left: $margin;
-        margin-right: $margin;
-        $height: 3px;
-        height: 3px;
-        border-radius: calc($height/2);
-        overflow: hidden;
-        background-color: lightgray;
-        color: transparent;
-        cursor: default;
-        pointer-events: none;
-    }
+  .project-container {
+    $margin: 4rem;
+    margin-left: $margin;
+    margin-right: $margin;
 
-    .project-container {
-        $margin: 4rem;
-        margin-left: $margin;
-        margin-right: $margin;
-
-        .project-header {
-            .project-about {
-                h1 {
-                    font-family: var(--primary-font);
-                    font-family: "Open Sans";
-                }
-
-                h2 {
-                    font-family: var(--secondary-font);
-                    font-size: 16px;
-                    font-weight: 400;
-                    letter-spacing: 1px;
-                }
-
-                p {
-                    font-family: var(--secondary-font);
-                }
-            }
-
-            /*
-            .abt-img-contain {
-                .about-image {
-                    content: none;
-                    background-image: url("../assets/images/FrostlightMountainSnow-TeamPhoto.png");
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    color: transparent;
-                    margin-right: 10px;
-                    width: 35vw;
-                    height: calc(35vw/calc(16/9));
-                    background-size: 35vw;
-                    min-width: 35vw;
-                    min-height: calc(35vw/calc(16/9));
-                    display: inline-block;
-                }
-            }
-            */
-
+    .project-header {
+      .project-about {
+        h1 {
+          font-family: var(--primary-font);
+          font-family: "Open Sans";
         }
-
-        .teaser-gallery {
-            .gallery-header {
-                h2 {
-                    font-family: var(--secondary-font);
-                }
-            }
-
-            .gallery-collage {
-                
-            display: flex;
-            flex-wrap: wrap;
-                .gallery-flex {
-                    display: inline-block;
-                    img {
-                        width: 15em;
-                    }
-                }
-            }
-        }
-    }
-
-    .social-promo {
-        $margin: 4rem;
-        margin-left: $margin;
-        margin-right: $margin;
 
         h2 {
-            font-family: var(--primary-font);
+          font-family: var(--secondary-font);
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 1px;
         }
 
         p {
-            font-family: var(--secondary-font);
+          font-family: var(--secondary-font);
         }
-
-        a {
-            font-family: var(--secondary-font);
-        }
+      }
     }
+
+    .teaser-gallery {
+      .gallery-header {
+        h2 {
+          font-family: var(--secondary-font);
+        }
+      }
+
+      .gallery-collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .gallery-item {
+          display: inline-block;
+          border-radius: 15px;
+          box-shadow: var(--box-shadow);
+          background-position: center center;
+          background-size: cover;
+          margin: 1em;
+          transition-duration: 450ms;
+          padding: 0;
+
+          img {
+            width: 15em;
+          }
+
+          .label {
+            background-color: rgba(0, 0, 0, 0.808);
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin-top: 0px;
+            border-radius: 15px;
+            text-align: center;
+            vertical-align: middle;
+            transition-duration: 450ms;
+            opacity: 0%;
+
+            h2 {
+              font-family: 24px;
+              font-family: var(--primary-font);
+              color: white;
+              width: 100%;
+              display: inline-block;
+              margin-top: 30px;
+            }
+
+            p {
+              font-family: var(--secondary-font);
+              display: inline-block;
+              color: white;
+              width: 100%;
+              margin-top: 10px;
+            }
+          }
+
+          &:hover {
+            transform: scale(110%);
+            cursor: pointer;
+
+            .label {
+              background-color: rgba(0, 0, 0, 0.384);
+              width: 100%;
+              opacity: 100%;
+
+              h2 {
+                font-family: 24px;
+                font-family: var(--primary-font);
+                color: white;
+              }
+
+              p {
+                font-family: var(--secondary-font);
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .social-promo {
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-bottom: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-image: url(../images/FrostlightMountainSnow-TeamPhoto.png);
+    background-size: cover;
+    background-position: center 40%;
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.685);
+      padding: 20px;
+      padding-left: 10%;
+      padding-right: 10%;
+      backdrop-filter: blur(5px);
+      width: fit-content;
+      display: inline-block;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+      h2 {
+        font-family: Ginto Normal;
+        display: block;
+        
+      }
+
+      p {
+        display: block;
+      }
+
+      a {
+        padding: 10px;
+        border-radius: 25px;
+        background-color: #5865f2;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        width: fit-content;
+        $side-padding: 30px;
+        padding-left: $side-padding;
+        padding-right: $side-padding;
+        box-shadow: 0px 3px 5px -1px #00000033, 0px 5px 8px 0px #00000024,
+          0px 1px 14px 0px #0000001f, 0 0 #23272a;
+          transition-duration: 250ms;
+
+        &:hover {
+          background-color: #7289DA;
+          color: white;
+          box-shadow: 0px 3px 5px -1px #00000033, 0px 5px 8px 0px #00000024,
+          0px 1px 14px 0px #0000001f, -2px 5px #4E5D94;
+          transform: translate(2px, -5px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .body {
+    $margin: 2rem;
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .body {
+    $margin: 0rem;
+    margin-left: $margin;
+    margin-right: $margin;
+  }
 }

@@ -2,11 +2,12 @@
 @charset "utf-8";
 /* Import CSS */
 @import url("https://sakura-sedaia.com/assets/fonts/fonts.css");
+@import url("../fonts/fonts.css");
 
 :root {
     /* Extra's to add onto the Glass Theme, imported from SoW Skin Server page */
     /* Fonts */
-    --primary-font: "Source Sans Pro";
+    --primary-font: "Madimi One";
     --secondary-font: "Open Sans";
     --minecraft-font: "Minecraft";
     /* Transition Durations */
@@ -51,7 +52,6 @@ nav {
     box-shadow: 0 3px 40px black;
 
     .container {
-
         display: flex;
         $margin: 3rem;
         margin: 0px;
@@ -162,6 +162,7 @@ nav {
             h1 {
                 font-family: var(--primary-font);
                 color: #dfdfdf;
+                font-size: 36pt;
             }
 
             p {
