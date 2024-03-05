@@ -94,17 +94,10 @@ function projectGal() {
             }
 
 
+            imgStore[i].style.opacity = "100%"
             console.groupEnd(imgList[i][0]) // Debug Only
 
             i = i + 1 // DO NOT DELETE, WILL BREAK SITE
-
-            var x = 0
-            if (i == imgList.length) {
-                while (x < imgList.length) {
-                    imgStore[x].style.opacity = "100%"
-                    x++
-                }
-            }
             projectGal()
         }, 100)
 

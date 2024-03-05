@@ -56,6 +56,9 @@
     padding: 0;
     height: 0px;
     opacity: 0%;
+    width: 0px;
+    flex-basis: 0px;
+    min-width: 0px;
 }
 .body .project-container .teaser-gallery .gallery-collage .gallery-item img {
     width: 15em;
