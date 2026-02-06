@@ -1,0 +1,289 @@
+:root {
+  /* Tailwind CSS Colors in HSL */
+
+  /* Slate */
+  --tw-slate-50: hsl(210, 40%, 98%);
+  --tw-slate-100: hsl(210, 40%, 96%);
+  --tw-slate-200: hsl(214, 32%, 91%);
+  --tw-slate-300: hsl(213, 27%, 84%);
+  --tw-slate-400: hsl(215, 16%, 47%);
+  --tw-slate-500: hsl(215, 25%, 27%);
+  --tw-slate-600: hsl(215, 19%, 35%);
+  --tw-slate-700: hsl(215, 25%, 27%);
+  --tw-slate-800: hsl(217, 33%, 17%);
+  --tw-slate-900: hsl(222, 47%, 11%);
+  --tw-slate-950: hsl(222, 47%, 7%);
+
+  /* Gray */
+  --tw-gray-50: hsl(210, 20%, 98%);
+  --tw-gray-100: hsl(210, 20%, 96%);
+  --tw-gray-200: hsl(214, 16%, 91%);
+  --tw-gray-300: hsl(213, 13%, 84%);
+  --tw-gray-400: hsl(215, 14%, 64%);
+  --tw-gray-500: hsl(215, 14%, 44%);
+  --tw-gray-600: hsl(215, 14%, 34%);
+  --tw-gray-700: hsl(215, 14%, 24%);
+  --tw-gray-800: hsl(217, 19%, 13%);
+  --tw-gray-900: hsl(221, 39%, 11%);
+  --tw-gray-950: hsl(224, 71%, 4%);
+
+  /* Zinc */
+  --tw-zinc-50: hsl(0, 0%, 98%);
+  --tw-zinc-100: hsl(240, 5%, 96%);
+  --tw-zinc-200: hsl(240, 6%, 90%);
+  --tw-zinc-300: hsl(240, 5%, 84%);
+  --tw-zinc-400: hsl(240, 5%, 65%);
+  --tw-zinc-500: hsl(240, 4%, 46%);
+  --tw-zinc-600: hsl(240, 5%, 34%);
+  --tw-zinc-700: hsl(240, 4%, 26%);
+  --tw-zinc-800: hsl(240, 6%, 15%);
+  --tw-zinc-900: hsl(240, 10%, 10%);
+  --tw-zinc-950: hsl(240, 10%, 4%);
+
+  /* Neutral */
+  --tw-neutral-50: hsl(0, 0%, 98%);
+  --tw-neutral-100: hsl(0, 0%, 96%);
+  --tw-neutral-200: hsl(0, 0%, 90%);
+  --tw-neutral-300: hsl(0, 0%, 83%);
+  --tw-neutral-400: hsl(0, 0%, 64%);
+  --tw-neutral-500: hsl(0, 0%, 45%);
+  --tw-neutral-600: hsl(0, 0%, 32%);
+  --tw-neutral-700: hsl(0, 0%, 25%);
+  --tw-neutral-800: hsl(0, 0%, 15%);
+  --tw-neutral-900: hsl(0, 0%, 10%);
+  --tw-neutral-950: hsl(0, 0%, 4%);
+
+  /* Stone */
+  --tw-stone-50: hsl(60, 9%, 98%);
+  --tw-stone-100: hsl(60, 5%, 96%);
+  --tw-stone-200: hsl(30, 4%, 90%);
+  --tw-stone-300: hsl(24, 5%, 83%);
+  --tw-stone-400: hsl(24, 5%, 64%);
+  --tw-stone-500: hsl(27, 5%, 45%);
+  --tw-stone-600: hsl(25, 5%, 33%);
+  --tw-stone-700: hsl(25, 5%, 26%);
+  --tw-stone-800: hsl(33, 5%, 16%);
+  --tw-stone-900: hsl(33, 5%, 11%);
+  --tw-stone-950: hsl(20, 6%, 5%);
+
+  /* Red */
+  --tw-red-50: hsl(0, 86%, 97%);
+  --tw-red-100: hsl(0, 93%, 94%);
+  --tw-red-200: hsl(0, 96%, 89%);
+  --tw-red-300: hsl(0, 94%, 82%);
+  --tw-red-400: hsl(0, 91%, 71%);
+  --tw-red-500: hsl(0, 84%, 60%);
+  --tw-red-600: hsl(0, 72%, 51%);
+  --tw-red-700: hsl(0, 74%, 42%);
+  --tw-red-800: hsl(0, 70%, 35%);
+  --tw-red-900: hsl(0, 63%, 31%);
+  --tw-red-950: hsl(0, 75%, 15%);
+
+  /* Orange */
+  --tw-orange-50: hsl(33, 100%, 96%);
+  --tw-orange-100: hsl(34, 100%, 92%);
+  --tw-orange-200: hsl(32, 97%, 85%);
+  --tw-orange-300: hsl(32, 95%, 75%);
+  --tw-orange-400: hsl(31, 91%, 63%);
+  --tw-orange-500: hsl(25, 95%, 53%);
+  --tw-orange-600: hsl(20, 92%, 48%);
+  --tw-orange-700: hsl(15, 88%, 40%);
+  --tw-orange-800: hsl(15, 76%, 33%);
+  --tw-orange-900: hsl(15, 75%, 28%);
+  --tw-orange-950: hsl(14, 100%, 13%);
+
+  /* Amber */
+  --tw-amber-50: hsl(48, 100%, 96%);
+  --tw-amber-100: hsl(48, 96%, 89%);
+  --tw-amber-200: hsl(48, 97%, 77%);
+  --tw-amber-300: hsl(45, 93%, 63%);
+  --tw-amber-400: hsl(38, 93%, 54%);
+  --tw-amber-500: hsl(35, 92%, 47%);
+  --tw-amber-600: hsl(29, 92%, 40%);
+  --tw-amber-700: hsl(22, 83%, 33%);
+  --tw-amber-800: hsl(20, 81%, 28%);
+  --tw-amber-900: hsl(17, 72%, 24%);
+  --tw-amber-950: hsl(12, 100%, 10%);
+
+  /* Yellow */
+  --tw-yellow-50: hsl(54, 100%, 95%);
+  --tw-yellow-100: hsl(54, 95%, 88%);
+  --tw-yellow-200: hsl(53, 98%, 77%);
+  --tw-yellow-300: hsl(50, 96%, 63%);
+  --tw-yellow-400: hsl(45, 93%, 54%);
+  --tw-yellow-500: hsl(41, 89%, 48%);
+  --tw-yellow-600: hsl(35, 92%, 40%);
+  --tw-yellow-700: hsl(28, 83%, 33%);
+  --tw-yellow-800: hsl(23, 81%, 28%);
+  --tw-yellow-900: hsl(20, 72%, 24%);
+  --tw-yellow-950: hsl(12, 100%, 10%);
+
+  /* Lime */
+  --tw-lime-50: hsl(79, 75%, 96%);
+  --tw-lime-100: hsl(80, 76%, 89%);
+  --tw-lime-200: hsl(81, 78%, 78%);
+  --tw-lime-300: hsl(82, 78%, 64%);
+  --tw-lime-400: hsl(82, 84%, 52%);
+  --tw-lime-500: hsl(84, 81%, 44%);
+  --tw-lime-600: hsl(85, 80%, 35%);
+  --tw-lime-700: hsl(84, 76%, 28%);
+  --tw-lime-800: hsl(84, 69%, 23%);
+  --tw-lime-900: hsl(83, 62%, 20%);
+  --tw-lime-950: hsl(85, 85%, 9%);
+
+  /* Green */
+  --tw-green-50: hsl(138, 76%, 97%);
+  --tw-green-100: hsl(141, 79%, 93%);
+  --tw-green-200: hsl(141, 79%, 85%);
+  --tw-green-300: hsl(142, 72%, 73%);
+  --tw-green-400: hsl(142, 71%, 55%);
+  --tw-green-500: hsl(142, 71%, 45%);
+  --tw-green-600: hsl(142, 76%, 36%);
+  --tw-green-700: hsl(142, 72%, 29%);
+  --tw-green-800: hsl(143, 64%, 24%);
+  --tw-green-900: hsl(144, 61%, 20%);
+  --tw-green-950: hsl(144, 86%, 8%);
+
+  /* Emerald */
+  --tw-emerald-50: hsl(152, 81%, 96%);
+  --tw-emerald-100: hsl(149, 80%, 90%);
+  --tw-emerald-200: hsl(152, 76%, 80%);
+  --tw-emerald-300: hsl(156, 73%, 66%);
+  --tw-emerald-400: hsl(158, 64%, 52%);
+  --tw-emerald-500: hsl(160, 84%, 39%);
+  --tw-emerald-600: hsl(161, 94%, 30%);
+  --tw-emerald-700: hsl(163, 94%, 24%);
+  --tw-emerald-800: hsl(163, 88%, 20%);
+  --tw-emerald-900: hsl(164, 86%, 16%);
+  --tw-emerald-950: hsl(166, 100%, 7%);
+
+  /* Teal */
+  --tw-teal-50: hsl(166, 76%, 97%);
+  --tw-teal-100: hsl(167, 72%, 89%);
+  --tw-teal-200: hsl(168, 74%, 78%);
+  --tw-teal-300: hsl(170, 72%, 64%);
+  --tw-teal-400: hsl(172, 66%, 50%);
+  --tw-teal-500: hsl(175, 77%, 38%);
+  --tw-teal-600: hsl(176, 87%, 30%);
+  --tw-teal-700: hsl(177, 85%, 24%);
+  --tw-teal-800: hsl(179, 80%, 20%);
+  --tw-teal-900: hsl(181, 78%, 17%);
+  --tw-teal-950: hsl(183, 100%, 8%);
+
+  /* Cyan */
+  --tw-cyan-50: hsl(183, 100%, 96%);
+  --tw-cyan-100: hsl(185, 94%, 87%);
+  --tw-cyan-200: hsl(186, 94%, 76%);
+  --tw-cyan-300: hsl(187, 92%, 63%);
+  --tw-cyan-400: hsl(188, 86%, 53%);
+  --tw-cyan-500: hsl(189, 94%, 43%);
+  --tw-cyan-600: hsl(191, 91%, 37%);
+  --tw-cyan-700: hsl(192, 83%, 31%);
+  --tw-cyan-800: hsl(192, 79%, 26%);
+  --tw-cyan-900: hsl(192, 72%, 22%);
+  --tw-cyan-950: hsl(195, 100%, 9%);
+
+  /* Sky */
+  --tw-sky-50: hsl(204, 100%, 97%);
+  --tw-sky-100: hsl(204, 94%, 94%);
+  --tw-sky-200: hsl(201, 94%, 86%);
+  --tw-sky-300: hsl(199, 95%, 74%);
+  --tw-sky-400: hsl(198, 93%, 60%);
+  --tw-sky-500: hsl(199, 89%, 48%);
+  --tw-sky-600: hsl(202, 80%, 42%);
+  --tw-sky-700: hsl(204, 70%, 36%);
+  --tw-sky-800: hsl(205, 65%, 31%);
+  --tw-sky-900: hsl(205, 59%, 26%);
+  --tw-sky-950: hsl(210, 67%, 14%);
+
+  /* Blue */
+  --tw-blue-50: hsl(214, 100%, 97%);
+  --tw-blue-100: hsl(214, 95%, 93%);
+  --tw-blue-200: hsl(213, 97%, 87%);
+  --tw-blue-300: hsl(212, 96%, 78%);
+  --tw-blue-400: hsl(213, 94%, 68%);
+  --tw-blue-500: hsl(217, 91%, 60%);
+  --tw-blue-600: hsl(221, 83%, 53%);
+  --tw-blue-700: hsl(224, 76%, 48%);
+  --tw-blue-800: hsl(226, 71%, 40%);
+  --tw-blue-900: hsl(224, 64%, 33%);
+  --tw-blue-950: hsl(222, 67%, 16%);
+
+  /* Indigo */
+  --tw-indigo-50: hsl(226, 100%, 97%);
+  --tw-indigo-100: hsl(226, 100%, 94%);
+  --tw-indigo-200: hsl(228, 96%, 89%);
+  --tw-indigo-300: hsl(230, 94%, 82%);
+  --tw-indigo-400: hsl(234, 89%, 74%);
+  --tw-indigo-500: hsl(239, 84%, 67%);
+  --tw-indigo-600: hsl(243, 75%, 59%);
+  --tw-indigo-700: hsl(244, 55%, 41%);
+  --tw-indigo-800: hsl(244, 49%, 34%);
+  --tw-indigo-900: hsl(244, 47%, 28%);
+  --tw-indigo-950: hsl(244, 63%, 15%);
+
+  /* Violet */
+  --tw-violet-50: hsl(250, 100%, 98%);
+  --tw-violet-100: hsl(251, 91%, 95%);
+  --tw-violet-200: hsl(251, 95%, 91%);
+  --tw-violet-300: hsl(252, 95%, 85%);
+  --tw-violet-400: hsl(255, 92%, 76%);
+  --tw-violet-500: hsl(258, 90%, 66%);
+  --tw-violet-600: hsl(262, 83%, 58%);
+  --tw-violet-700: hsl(263, 70%, 50%);
+  --tw-violet-800: hsl(263, 69%, 42%);
+  --tw-violet-900: hsl(264, 67%, 35%);
+  --tw-violet-950: hsl(267, 83%, 15%);
+
+  /* Purple */
+  --tw-purple-50: hsl(270, 100%, 98%);
+  --tw-purple-100: hsl(269, 93%, 94%);
+  --tw-purple-200: hsl(269, 97%, 89%);
+  --tw-purple-300: hsl(270, 95%, 83%);
+  --tw-purple-400: hsl(271, 91%, 74%);
+  --tw-purple-500: hsl(271, 81%, 56%);
+  --tw-purple-600: hsl(271, 70%, 49%);
+  --tw-purple-700: hsl(272, 65%, 41%);
+  --tw-purple-800: hsl(272, 61%, 34%);
+  --tw-purple-900: hsl(273, 58%, 29%);
+  --tw-purple-950: hsl(276, 83%, 13%);
+
+  /* Fuchsia */
+  --tw-fuchsia-50: hsl(289, 100%, 98%);
+  --tw-fuchsia-100: hsl(287, 100%, 95%);
+  --tw-fuchsia-200: hsl(288, 96%, 91%);
+  --tw-fuchsia-300: hsl(290, 95%, 84%);
+  --tw-fuchsia-400: hsl(291, 91%, 75%);
+  --tw-fuchsia-500: hsl(292, 84%, 61%);
+  --tw-fuchsia-600: hsl(293, 69%, 49%);
+  --tw-fuchsia-700: hsl(295, 70%, 40%);
+  --tw-fuchsia-800: hsl(295, 68%, 33%);
+  --tw-fuchsia-900: hsl(296, 63%, 28%);
+  --tw-fuchsia-950: hsl(297, 100%, 12%);
+
+  /* Pink */
+  --tw-pink-50: hsl(327, 73%, 97%);
+  --tw-pink-100: hsl(326, 78%, 95%);
+  --tw-pink-200: hsl(327, 87%, 90%);
+  --tw-pink-300: hsl(328, 95%, 84%);
+  --tw-pink-400: hsl(330, 91%, 75%);
+  --tw-pink-500: hsl(333, 71%, 51%);
+  --tw-pink-600: hsl(335, 78%, 42%);
+  --tw-pink-700: hsl(336, 75%, 34%);
+  --tw-pink-800: hsl(336, 69%, 29%);
+  --tw-pink-900: hsl(336, 63%, 26%);
+  --tw-pink-950: hsl(338, 96%, 12%);
+
+  /* Rose */
+  --tw-rose-50: hsl(355, 100%, 97%);
+  --tw-rose-100: hsl(355, 100%, 94%);
+  --tw-rose-200: hsl(353, 96%, 90%);
+  --tw-rose-300: hsl(352, 95%, 83%);
+  --tw-rose-400: hsl(351, 91%, 74%);
+  --tw-rose-500: hsl(350, 89%, 60%);
+  --tw-rose-600: hsl(349, 77%, 50%);
+  --tw-rose-700: hsl(348, 83%, 38%);
+  --tw-rose-800: hsl(347, 77%, 32%);
+  --tw-rose-900: hsl(346, 75%, 28%);
+  --tw-rose-950: hsl(345, 100%, 11%);
+}

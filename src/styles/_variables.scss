@@ -1,0 +1,46 @@
+// Colors
+:root {
+  --bg-primary-val: 220, 20%, 10%;
+  --bg-primary: hsl(var(--bg-primary-val));
+  --bg-secondary-val: 220, 15%, 15%;
+  --bg-secondary: hsl(var(--bg-secondary-val));
+  --bg-accent-lime-val: 124, 63%, 69%;
+  --bg-accent-lime: hsl(var(--bg-accent-lime-val));
+  --bg-accent-cyan-val: 196, 100%, 77%;
+  --bg-accent-cyan: hsl(var(--bg-accent-cyan-val));
+
+  --tx-primary-val: 0, 0%, 95%;
+  --tx-primary: hsl(var(--tx-primary-val));
+  --tx-secondary-val: 0, 0%, 50%;
+  --tx-secondary: hsl(var(--tx-secondary-val));
+  --tx-accent-lime-val: 124, 63%, 69%;
+  --tx-accent-lime: hsl(var(--tx-accent-lime-val));
+  --tx-accent-cyan-val: 196, 100%, 77%;
+  --tx-accent-cyan: hsl(var(--tx-accent-cyan-val));
+
+  // Fonts from original site
+  --font-heading: "Titan One", sans-serif;
+  --font-main: "Lato", sans-serif;
+  --font-mc: "Minecraft", monospace;
+
+  // Other variables from original site
+  --radius-md: 10px;
+  --radius-sm: 5px;
+  --box-shadow: 0px 3px 5px -1px hsla(0, 0%, 0%, 0.2), 0px 5px 8px 0px hsla(0, 0%, 0%, 0.14), 0px 1px 14px 0px hsla(0, 0%, 0%, 0.12);
+  --blur: 25px;
+  --nav-height: 44px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary-val: 0, 0%, 100%;
+    --bg-secondary-val: 0, 0%, 95%;
+    --bg-accent-lime-val: 124, 63%, 45%;
+    --bg-accent-cyan-val: 196, 100%, 40%;
+
+    --tx-primary-val: 0, 0%, 10%;
+    --tx-secondary-val: 0, 0%, 40%;
+    --tx-accent-lime-val: 124, 63%, 45%;
+    --tx-accent-cyan-val: 196, 100%, 40%;
+  }
+}

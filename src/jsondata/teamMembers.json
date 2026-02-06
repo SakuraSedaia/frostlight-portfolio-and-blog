@@ -1,0 +1,124 @@
+{
+  "leadership": [
+    {
+      "name": "Tundrabolt",
+      "role": "Founder & CEO",
+      "image": "/images/team/MP_Tunn.jpg",
+      "socials": [
+          {
+            "name": "Discord",
+            "url": "https://discord.gg/jZwXTpqZmF"
+          }
+        ],
+      "bio" : ""
+    },
+    {
+      "name": "Northern",
+      "role": "Co-Founder & CTO",
+      "image": "/images/team/MP_Northern.jpg",
+      "socials": [
+        {
+          "name": "Instagram",
+          "url": "https://instagram.com/northgoshawk22?igshid=NGExMmI2YTkyZg=="
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/goshawk_north"
+        }
+      ],
+      "bio" : ""
+    }
+  ],
+  "members": [
+    {
+      "name": "Sakura",
+      "role": "Software Developer, Rig & Lighting Specialist",
+      "image": "/images/team/MP_Sakura.jpg",
+      "socials": [
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/c/SakuraSedaia"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/SakuraSedaia"
+        }
+      ],
+      "bio": ""
+    },
+    {
+      "name": "Cloudless Sky",
+      "role": "Builder, Artist",
+      "image": "/images/team/MP_Cloud.jpg",
+      "socials": [
+        {
+          "name": "Twitter",
+          "url": "https://www.instagram.com/cloudl3ss_sky/"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/channel/UCTUAdtfkiJ0D6XH5HwrdgVQ"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/cloudl3ss_sky/"
+        }
+      ],
+      "bio": ""
+    },
+    {
+      "name": "Megste",
+      "role": "Animator",
+      "image": "/images/team/MP_Megste.jpg",
+      "socials": [
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/@MegsteStudios/videos"
+        }
+      ],
+      "bio": ""
+    },
+    {
+      "name": "Fupper",
+      "role": "Animator",
+      "image": "/images/team/MP_Fupper.jpg",
+      "socials": [],
+      "bio": ""
+    },
+    {
+      "name": "Combust",
+      "role": "Animator, Modeller",
+      "image": "/images/team/MP_Combust.jpg",
+      "socials": [],
+      "bio": ""
+    },
+    {
+      "name": "Zevryan",
+      "role": "Music Production",
+      "image": "/images/team/MP_Zevryan.gif",
+      "socials": [
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/channel/UCkyk7s8F0GK6j09IlSvgRZQ"
+        }
+      ],
+      "bio": ""
+    },
+    {
+      "name": "Detective",
+      "role": "Asset Design, Builder",
+      "image": "/images/team/MP_Detective.jpg",
+      "socials": [
+        {
+          "name": "YouTube",
+          "url": "https://youtube.com/@DetectiveBTW"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://instagram.com/detectivebtw?igshid=MzRlODBiNWFlZA=="
+        }
+      ],
+      "bio": ""
+    }
+  ]
+}
