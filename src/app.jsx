@@ -1,5 +1,6 @@
 import { Router } from "@solidjs/router";
 import { Suspense } from "solid-js";
+import { MetaProvider } from "@solidjs/meta";
 import { FileRoutes } from "@solidjs/start/router"
 import "./app.scss";
 
@@ -9,11 +10,10 @@ export default function App() {
 		<Router
 			base={import.meta.env.SERVER_BASE_URL}
 			root={(props) => (
-				<>
+				<MetaProvider>
 					<Suspense>{props.children}</Suspense>
-				</>
+				</MetaProvider>
 			)}
-			url={"/"}
 		>
 			<FileRoutes />
 		</Router>

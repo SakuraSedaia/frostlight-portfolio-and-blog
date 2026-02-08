@@ -1,19 +1,24 @@
-import Header from "~/components/Header.jsx";
-import Footer from "~/components/Footer.jsx";
-import IndexAboutUs from "~/components/index-sections/About.jsx";
-import TheTeam from "~/components/index-sections/TheTeam.jsx";
-import Discord from "~/components/index-sections/Discord.jsx";
+import { Suspense, ErrorBoundary } from "solid-js";
+import { Title } from "@solidjs/meta";
+import Header from "~/components/header.jsx";
+import Footer from "~/components/footer.jsx";
+import IndexAboutUs from "~/sections/index/about.jsx";
+import TheTeam from "~/sections/index/the-team.jsx";
+import Discord from "~/sections/index/discord.jsx";
 
 export default function Home() {
 	return (
-		<>
-			<Header img={"home"} />
-			<main class="body-container">
-				<IndexAboutUs />
-				<TheTeam />
-				<Discord />
-			</main>
-			<Footer />
-		</>
+		<ErrorBoundary fallback={(err) => <div>Error: {err.message}</div>}>
+			<Title>Home - Frostlight Studios</Title>
+			<Suspense fallback={<div>Loading...</div>}>
+				<Header img={"home"} />
+				<main class="body-container">
+					<IndexAboutUs />
+					<TheTeam />
+					<Discord />
+				</main>
+				<Footer />
+			</Suspense>
+		</ErrorBoundary>
 	)
 }

@@ -1,15 +1,20 @@
-import Header from "~/components/Header.jsx";
-import Footer from "~/components/Footer.jsx";
-import NotFinished from "~/components/NotFinished.jsx";
+import { Suspense, ErrorBoundary } from "solid-js";
+import { Title } from "@solidjs/meta";
+import Header from "~/components/header.jsx";
+import Footer from "~/components/footer.jsx";
+import NotFinished from "~/components/not-finished.jsx";
 
 export default function Beginnings() {
 	return (
-		<>
-			<Header img={"beginnings"} desc={"A Dark Fantasy story"}/>
-			<main class="body-container">
-				<NotFinished />
-			</main>
-			<Footer />
-		</>
+		<ErrorBoundary fallback={(err) => <div>Error: {err.message}</div>}>
+			<Title>Beginnings - Frostlight Studios</Title>
+			<Suspense fallback={<div>Loading...</div>}>
+				<Header img={"beginnings"} desc={"A Dark Fantasy story"}/>
+				<main class="body-container">
+					<NotFinished />
+				</main>
+				<Footer />
+			</Suspense>
+		</ErrorBoundary>
 	)
 }

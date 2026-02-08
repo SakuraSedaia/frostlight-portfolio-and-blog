@@ -27,8 +27,8 @@ nav {
       height: var(--nav-height);
 
       .logo-img {
-        height: 32px;
-        margin-right: 10px;
+        height: 2rem;
+        margin-right: 0.625rem;
       }
     }
 
@@ -41,15 +41,15 @@ nav {
 
         .navbar-item {
           display: block;
-          width: 100px;
+          width: 6.25rem;
           text-align: center;
           line-height: var(--nav-height);
           color: var(--tx-secondary);
           text-decoration: none;
           font-family: var(--font-main);
-          font-size: 14px;
+          font-size: 10.5pt;
           font-weight: 600;
-          letter-spacing: 1px;
+          letter-spacing: 0.0625rem;
           transition: all 0.2s ease;
           box-shadow: 0 0 inset var(--bg-accent-cyan), 0 0 inset var(--bg-secondary);
 
