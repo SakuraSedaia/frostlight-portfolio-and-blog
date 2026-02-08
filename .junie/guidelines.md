@@ -1,54 +1,38 @@
-### SolidJS HTML Elements
-- When generating HTML elements, always use the `class` attribute instead of React's `className`. SolidJS follows standard HTML attribute naming for classes.
-- Ensure all components follow the SolidJS naming convention.
-- Ensure component compliance with SolidJS best practices.
+### Frontend & Accessibility
+- Use semantic HTML elements (e.g., `<main>`, `<section>`, `<nav>`) and follow WCAG guidelines.
+- Use `alt` for media and `title` for tooltips; ensure all components are accessible.
+- SolidJS: Always use `class` instead of `className` and follow SolidJS naming/best practices.
+- SolidJS: Always wrap HTML attributes in curly braces.
+- Modular JSX: Wrap page sections in their own components; use `<section>` with unique IDs.
 
 ### SolidStart & Routing
-- Use the `<A>` component from `@solidjs/router` for all internal links to ensure proper SPA navigation and prevent full page reloads.
-- Page components and routes should be wrapped in `Suspense` and `ErrorBoundary` to handle loading states and catch runtime errors.
-- Do not hardcode the `url` prop in the `Router` component in `app.jsx` unless specifically required for SSR state, as it can cause unexpected redirects on page reload.
-- When loading dynamic content (e.g., Markdown files via `import.meta.glob`) based on route parameters, use robust and case-insensitive matching logic to ensure compatibility across different environments.
-- Use directory-based parameterized routing (e.g., `src/routes/changelog/[item].jsx`) for cleaner route structure and to ensure reliable parameter resolution.
-- Always implement loading fallbacks and explicit "not found" or error states for dynamic routes.
+- Use `<A>` from `@solidjs/router` for all internal links to maintain SPA navigation.
+- Wrap page components/routes in `Suspense` and `ErrorBoundary`.
+- Use directory-based parameterized routing (e.g., `src/routes/[item].jsx`) for cleaner structure.
+- Implement loading fallbacks and "not found"/error states for dynamic routes.
+- Match dynamic content (e.g., `import.meta.glob`) using robust, case-insensitive logic.
+- Avoid hardcoding the `url` prop in the `Router` unless required for SSR state.
 
-### Styling
-- This project is styled using SCSS.
-- Any modifications to the stylesheets must be done using the SCSS syntax.
-- Any colors used must be formatted using hsl.
-- If a provided color is not hsl, it must be converted to hsl.
-- Use the `!important` rule sparingly and only when necessary.
-- Use `em` and `rem` units for element sizing.
-- Use `pt` units for typography.
-- Use `px` for @media queries.
-- Ensure SCSS files are formatted with proper indentation and adhere to the SCSS style guide.
+### Styling (SCSS)
+- Use SCSS syntax with proper indentation and HSL for all colors.
+- Use `rem` and `em` for sizing and typography; avoid `pt` (except for print).
+- Note: `--font-size-heading` and `--font-size-heading-2` are set higher than standard to compensate for the "Jersey 15" font's smaller visual scale.
+- Use `em` for @media queries to ensure better accessibility and scaling.
+- Use `!important` sparingly and only when necessary.
 
-### Ignore Files
-- Unless directly referenced in the request, ignore any files in `.hidden`.
+### File & Path Management
+- Use lowercase, hyphenated naming for files/folders; avoid spaces or special characters.
+- All imports must strictly match the lowercase filename casing.
+- Use forward slashes `/` for all paths.
+- Component references: Use relative paths from `src` (root).
+- Images: Use root-relative paths for assets in the `public` directory.
+- Ignore `.hidden` unless directly referenced.
 
-### Compressing Files
-- Unless otherwise noted, use 7zip to compress files using the installed binary.
-- Compress all files into the 7z format.
-- Unless otherwise noted, place all compressed files in the `.compressed` folder.
-- If developing on Linux, use `tar` to compress files instead of 7zip.
-- If developing on Linux, compress into the `.tar.gz` format instead of the `.7z` format.
+### Project Resources & Libraries
+- External Resources: Download fonts/images locally (e.g., `public/fonts`) instead of using CDNs.
+- Libraries: Use only when necessary, ensure proper licensing, and document usage/modifications.
+- Scripts: Store automation/helper scripts in `utils` and ensure they are tested.
 
-### File Naming Conventions
-- Use descriptive and consistent naming conventions for files and folders.
-- Avoid using spaces or special characters in file and folder names.
-- Use lowercase letters and hyphens for file and folder names.
-- All imports must strictly match the filename casing. Since filenames are lowercase, imports should also be lowercase.
-
-### Running System Commands
-- If multiple commands are required to run, use a script or batch file to automate the process.
-- Ensure that all commands are tested and working correctly before including them in the guidelines.
-
-### Path handling
-- Always use forward slashes `/` for path handling.
-- When referencing to another component, use the relative path from the source root.
-- Use the `src` directory as the root for all relative paths.
-- When referencing an Image, use absolute paths.
-- When using the word `root` in a path, use the `src` directory as the root. Only refer to root as the Linux root directory when explicitly asked.
-
-### Helper Scripts
-- If a `utils` folder exists, use it to store helper scripts that automate processes or generate files.
-- Ensure that all scripts are tested and working correctly before including them in the guidelines.
+### System & Operations
+- Commands: Automate multiple commands via scripts/batch files; test before use.
+- Compression: Use 7zip (`.7z` format) in the `.compressed` folder.

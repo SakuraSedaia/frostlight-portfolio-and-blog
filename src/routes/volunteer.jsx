@@ -1,8 +1,12 @@
 import { Suspense, ErrorBoundary } from "solid-js";
 import { Title } from "@solidjs/meta";
-import Header from "~/components/header.jsx";
-import Footer from "~/components/footer.jsx";
-import NotFinished from "~/components/not-finished.jsx";
+
+// Import Components
+import Header from "~/sections/header.jsx";
+import Footer from "~/sections/footer.jsx";
+
+// Import Sections
+import NotFinished from "~/sections/not-finished.jsx";
 
 export default function Volunteer() {
 	return (

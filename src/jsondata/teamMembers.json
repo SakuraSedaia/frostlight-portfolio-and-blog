@@ -32,7 +32,7 @@
   "members": [
     {
       "name": "Sakura",
-      "role": "Software Developer, Rig & Lighting Specialist",
+      "role": "Web Developer",
       "image": "/images/team/MP_Sakura.jpg",
       "socials": [
         {
@@ -42,6 +42,10 @@
         {
           "name": "GitHub",
           "url": "https://github.com/SakuraSedaia"
+        },
+        {
+          "name": "DeviantArt",
+          "url": "https://www.deviantart.com/sakurasedaia"
         }
       ],
       "bio": ""

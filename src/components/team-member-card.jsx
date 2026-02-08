@@ -13,8 +13,8 @@ export default function TeamMemberCard(props) {
 			<div class="social">
 				<For each={json.socials}>
 					{(social) => (
-						<a href={social.url} target="_blank">
-							<SocialIcon name={social.name} class="social-icon" />
+						<a href={social.url} target="_blank" rel="noopener noreferrer">
+							<SocialIcon name={social.name} class="" />
 						</a>
 					)}
 				</For>

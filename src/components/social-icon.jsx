@@ -17,8 +17,8 @@ export default function SocialIcon(props) {
 	if (!iconName) return null;
 
 	return (
-		<svg viewBox="0 0 24 24" fill="currentColor" class={props.class}>
-			<use href={`/images/vectors/${iconName}.svg#${iconName}`} />
+		<svg viewBox="0 0 24 24" fill="currentColor" class={`social-icon ${props.class}`}>
+			<use href={`/images/vectors/social-icons/${iconName}.svg#${iconName}`} />
 		</svg>
 	);
 }

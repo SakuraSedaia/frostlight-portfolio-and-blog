@@ -3,7 +3,7 @@ import teamMembers from "~/jsondata/teamMembers.json";
 import {For} from "solid-js";
 export default function TheTeam() {
 	return (
-		<section class="our-team">
+		<section id="our-team">
 			<h2>The Team</h2>
 			<div class="h-divide"></div>
 			
