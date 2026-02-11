@@ -47,6 +47,7 @@
 
 ### Version Control
 - Upon creation of new files, automatically add them to git unless they are ignored by `.gitignore`.
+- On the first session of the day (use the `.logs` directory to determine the first session), perform a `git update` (or `git pull`) before starting any other tasks to ensure no origin/local conflicts occur.
 
 ### File Naming Conventions
 - Use descriptive and consistent naming (lowercase and hyphens).

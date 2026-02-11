@@ -81,7 +81,9 @@ Contributions are welcome! To maintain code quality and consistency, please foll
 - **Naming:** Use lowercase and hyphens for all files and folders.
 - **Paths:** Always use forward slashes `/` for path handling.
 - **Imports:** Imports must strictly match the filename casing.
-- **VCS:** New files must be automatically added to Git unless ignored by `.gitignore`.
+- **VCS:** 
+  - New files must be automatically added to Git unless ignored by `.gitignore`.
+  - On the first session of the day, perform a `git pull` before starting any other tasks to avoid conflicts.
 
 ### 5. Pull Requests
 - Ensure your code builds successfully (`npm run build`).
