@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+.body-container {
+  margin: 1rem 7rem auto 7rem;
+  background-color: var(--bg-primary);
+  font-family: var(--font-main);
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 80em) {
+  .body-container {
+    margin: 1rem 2rem;
+  }
+}

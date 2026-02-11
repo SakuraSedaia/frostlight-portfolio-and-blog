@@ -1,0 +1,41 @@
+@use "../variables" as *;
+
+.about {
+  display: flex;
+  margin: 0 4rem;
+  gap: 2rem;
+  align-items: center;
+
+  .about-text {
+    flex: 1;
+    p {
+      text-indent: 1rem;
+      color: var(--tx-primary);
+    }
+  }
+
+  .abt-img-contain {
+    .about-image {
+      width: 35vw;
+      height: auto;
+      aspect-ratio: 16/9;
+      border-radius: 0.3125rem;
+      box-shadow: var(--box-shadow);
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 80em) {
+  .about {
+    flex-direction: column;
+    margin: 0 1rem;
+    
+    .abt-img-contain {
+      width: 100%;
+      .about-image {
+        width: 100%;
+      }
+    }
+  }
+}

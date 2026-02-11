@@ -15,12 +15,12 @@ export default function Header(props) {
 			<Nav title={page_title} />
 			
 			{/* Header Content */}
-			<div class="header-box">
+			<div class={"header-box"}>
 				<Show when={props.credit !== undefined}>
-					<p class="img-credit">Image by <i>{props.credit}</i></p>
+					<p class={"img-credit"}>Image by <i>{props.credit}</i></p>
 				</Show>
-				<div class="header-content">
-					<div class="header-text">
+				<div class={"header-content"}>
+					<div class={"header-text"}>
 						<h1>{page_title}</h1>
 						<Show when={props.desc !== undefined}>
 							<p>{props.desc}</p>

@@ -1,0 +1,46 @@
+@use "../variables" as *;
+
+.discord {
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 3rem 10% 4rem;
+  background-image: url(/images/FrostlightMountainSnow-TeamPhoto.png);
+  background-size: cover;
+  background-position: center 40%;
+
+  .overlay {
+    background-color: hsla(var(--bg-primary-val), .685);
+    padding: 1.25rem 10%;
+    backdrop-filter: blur(0.3125rem);
+    width: fit-content;
+    display: inline-block;
+    border-radius: 0.9375rem;
+    box-shadow: var(--box-shadow);
+
+    p {
+      display: block;
+    }
+
+    a {
+      border-radius: 1.5625rem;
+      background-color: hsl(235, 86%, 65%);
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      width: fit-content;
+      $side-padding: 1.875rem;
+      padding: 0.625rem $side-padding;
+      box-shadow: 0px 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2), 0px 0.3125rem 0.5rem 0px hsla(0, 0%, 0%, 0.14),
+      0px 0.0625rem 0.875rem 0px hsla(0, 0%, 0%, 0.12), 0 0 hsl(220, 9%, 15%);
+      transition-duration: 0.25s;
+
+      &:hover {
+        background-color: hsl(227, 58%, 65%);
+        color: white;
+        box-shadow: 0px 0.1875rem 0.3125rem -0.0625rem hsla(0, 0%, 0%, 0.2), 0px 0.3125rem 0.5rem 0px hsla(0, 0%, 0%, 0.14),
+        0px 0.0625rem 0.875rem 0px hsla(0, 0%, 0%, 0.12), -0.125rem 0.3125rem hsl(229, 31%, 44%);
+        transform: translate(0.125rem, -0.3125rem);
+      }
+    }
+  }
+}

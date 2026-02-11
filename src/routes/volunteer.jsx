@@ -14,7 +14,7 @@ export default function Volunteer() {
 			<Title>Volunteer - Frostlight Studios</Title>
 			<Suspense fallback={<div>Loading...</div>}>
 				<Header img={"volunteer"} desc={"Volunteer to work with us!"} />
-				<main class="body-container">
+				<main class={"body-container"}>
 					<NotFinished />
 				</main>
 				<Footer />

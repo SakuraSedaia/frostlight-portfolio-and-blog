@@ -17,7 +17,7 @@ export default function Home() {
 			<Title>Home - Frostlight Studios</Title>
 			<Suspense fallback={<div>Loading...</div>}>
 				<Header img={"home"} credit={"Tundrabolt"} />
-				<main class="body-container">
+				<main class={"body-container"}>
 					<IndexAboutUs />
 					<TheTeam />
 					<Discord />

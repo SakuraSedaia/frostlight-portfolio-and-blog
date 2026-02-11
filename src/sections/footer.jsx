@@ -14,20 +14,20 @@ function Footer() {
 			<nav class={"socials"}>
 				<ul>
 					<li>
-						<a href={"https://discord.gg/jZwXTpqZmF"} class={"link"} target="_blank"
-						   rel="noopener noreferrer">
+						<a href={"https://discord.gg/jZwXTpqZmF"} class={"link"} target={"_blank"}
+						   rel={"noopener noreferrer"}>
 							<SocialIcon name={"discord"}/> Discord
 						</a>
 					</li>
 					<li>
-						<a href={"https://youtube.com/@frostlightstudios1081"} class={"link"} target="_blank" rel="noopener noreferrer">
+						<a href={"https://youtube.com/@frostlightstudios1081"} class={"link"} target={"_blank"} rel={"noopener noreferrer"}>
 							<SocialIcon name={"youtube"}/> Youtube
 						</a>
 					</li>
 				</ul>
 			</nav>
-			<p class="copyright">&copy; {year()} <a href="https://frostlight-studios.org" target="_blank"
-			                               rel="noopener noreferrer" class={"link"}>Frostlight Studios</a>. All Rights Reserved.</p>
+			<p class={"copyright"}>&copy; {year()} <a href={"https://frostlight-studios.org"} target={"_blank"}
+			                               rel={"noopener noreferrer"} class={"link"}>Frostlight Studios</a>. All Rights Reserved.</p>
 		</footer>
 	);
 }

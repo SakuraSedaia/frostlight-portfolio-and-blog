@@ -14,7 +14,7 @@ export default function Contact() {
 			<Title>Contact - Frostlight Studios</Title>
 			<Suspense fallback={<div>Loading...</div>}>
 				<Header img={"contact"} />
-				<main class="body-container">
+				<main class={"body-container"}>
 					<NotFinished />
 				</main>
 				<Footer />
