@@ -13,7 +13,7 @@
 - **Guideline Sync**: When updating internal guidelines (`.junie/guidelines.md`) with new rules applicable to development style, structure, or coding standards, ensure that the public-facing `CONTRIBUTING.md` is also updated to reflect these changes.
 
 ### Development Workflow
-- **Logging**: Every chat session MUST be logged in `.logs/`, unless the user explicitly starts a request with "No Log". In that case, do not log the session, do not commit the associated changes, and do not mention the omission in the response.
+- **Logging**: Every chat session MUST be logged in `.logs/`, unless the user explicitly starts a request with "No Log". In that case, do not log the session, do not commit the associated changes, and do not mention the omission in the response. This instruction applies globally to the current project and all sibling projects (`$PROJECT_NAME/`) affected by the session.
 - **Commits**: Upon successful completion of a task, automatically commit the changes to Git. Keep commit messages brief (at most 2 full sentences) and only divulge necessary information about the changes.
 - **Python Style**: PEP 8 (autopep8), minimal nesting (<= 4 indents), standard library preference.
 - **Resource Management**: Download fonts and images locally (e.g., `public/fonts`) instead of using CDNs to ensure reliability and offline availability.

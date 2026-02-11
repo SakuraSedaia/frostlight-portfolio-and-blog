@@ -83,7 +83,7 @@ Contributions are welcome! To maintain code quality and consistency, please foll
 - **Imports:** Imports must strictly match the filename casing.
 - **VCS:** 
   - New files must be automatically added to Git unless ignored by `.gitignore`.
-  - On the first session of the day, perform a `git pull` before starting any other tasks to avoid conflicts.
+  - On the first session of the day, perform a `git pull` before starting any other tasks to avoid conflicts. This applies to both the current project and any sibling projects modified.
 
 ### 5. Pull Requests
 - Ensure your code builds successfully (`npm run build`).
