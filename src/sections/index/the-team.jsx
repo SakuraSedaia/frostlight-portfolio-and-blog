@@ -1,6 +1,8 @@
 import TeamMemberCard from "~/components/team-member-card.jsx";
 import teamMembers from "~/jsondata/teamMembers.json";
 import {For} from "solid-js";
+
+
 export default function TheTeam() {
 	return (
 		<section class={"our-team"}>
@@ -9,7 +11,7 @@ export default function TheTeam() {
 
 			<div class={"hierarchy"}>
 				<h3>Leadership</h3>
-				<div class={"leaders"}>
+				<div class={"card-container leaders"}>
 					<For each={teamMembers.leadership}>
 						{(member) => <TeamMemberCard data={JSON.stringify(member)} />}
 					</For>
@@ -18,7 +20,7 @@ export default function TheTeam() {
 				<div class={"h-divide"}></div>
 
 				<h3>Members</h3>
-				<div class={"leaders"}>
+				<div class={"card-container members"}>
 					<For each={teamMembers.members}>
 						{(member) => <TeamMemberCard data={JSON.stringify(member)} />}
 					</For>

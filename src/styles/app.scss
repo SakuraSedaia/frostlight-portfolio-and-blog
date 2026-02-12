@@ -1,0 +1,14 @@
+@use "variables";
+@use "fonts";
+@use "global";
+@use "tailwind-colors";
+
+// Components
+@use "components/header-footer";
+// Pages
+@use "pages/index/index";
+
+// Sections
+@use "sections/index/about";
+@use "sections/index/discord";
+@use "sections/index/our-team";
