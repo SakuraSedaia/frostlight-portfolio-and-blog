@@ -1,0 +1,87 @@
+@use "../../variables" as *;
+
+#our-team {
+  margin: 4rem;
+
+  h2 {
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--tx-primary);
+  }
+
+
+  .hierarchy {
+    text-align: center;
+    padding-bottom: 3rem;
+
+    h3 {
+      letter-spacing: 0.125rem;
+      color: var(--tx-primary);
+      margin: 2rem 0;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+
+      .team-card {
+        text-align: center;
+        width: 12.5rem;
+        padding: 0.9375rem;
+        border-radius: var(--radius-md);
+        background-color: var(--bg-secondary);
+        border: 0.125rem solid hsla(0, 0%, 50%, 0.2);
+        box-shadow: var(--box-shadow);
+        display: inline-block;
+        transition: transform 0.2s;
+
+
+        .portrait {
+          width: 8.75rem;
+          height: 8.75rem;
+          border-radius: 50%;
+          box-shadow: var(--box-shadow);
+          object-fit: cover;
+          margin-bottom: 0.625rem;
+        }
+
+        .about-member {
+          h3 {
+            margin: 0.625rem 0 0.3125rem 0;
+            letter-spacing: -0.03125rem;
+          }
+
+          p {
+            line-height: 1.2;
+            font-size: var(--font-size-small);
+            color: var(--tx-secondary);
+            margin: 0 0 0.625rem 0;
+          }
+        }
+
+        .social {
+          border-top: 0.0625rem solid hsla(0, 0%, 50%, 0.2);
+          padding-top: 0.625rem;
+          display: flex;
+          justify-content: center;
+          gap: 0.625rem;
+
+          .social-icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            color: var(--tx-secondary);
+            transition: color 0.2s;
+
+            &:hover {
+              color: var(--tx-primary);
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}

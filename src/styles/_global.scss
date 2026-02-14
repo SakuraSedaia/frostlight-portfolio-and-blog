@@ -1,0 +1,69 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--tx-primary);
+  font-family: var(--font-main);
+  font-size: var(--font-size-body);
+  overflow-x: hidden;
+}
+
+.body-container {
+  margin: 1rem 7rem auto 7rem;
+  background-color: var(--bg-primary);
+  font-family: var(--font-main), sans-serif;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 80em) {
+  .body-container {
+    margin: 1rem 2rem;
+  }
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-heading-weight);
+}
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--font-heading-weight);
+}
+h3 {
+  font-family: var(--font-main);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-heading-weight);
+}
+
+.h-divide {
+  height: .1em;
+  margin: 1rem 30%;
+  background-color: hsla(0, 0%, 50%, 0.2);
+  border-radius: 0.3125rem;
+}
+
+.social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+
+
+.link {
+  color: var(--tx-primary);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--tx-accent-lime);
+    box-shadow: 0 0.1em hsla(var(--tx-accent-lime-val), 50%);
+  }
+}
