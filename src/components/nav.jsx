@@ -1,5 +1,7 @@
 
 import { useLocation, A } from "@solidjs/router";
+import RouteData from "~/json-data/routes.json";
+import {For, Show} from "solid-js";
 
 export default function Nav() {
     const location = useLocation();
@@ -13,9 +15,13 @@ export default function Nav() {
                 </A>
                 <div class={"navbar-nav"}>
                     <ul class={"navbar-list"}>
-                        <li class={`navbar-item ${active("/")}`}><A href={"/"}>Home</A></li>
-                        <li class={`navbar-item ${active("/volunteer")}`}><A href={"/volunteer"}>Volunteer</A></li>
-                        <li class={`navbar-item ${active("/contact")}`}><A href={"/contact"}>Contact</A></li>
+                        <For each={RouteData}>
+                            {route => (
+                              <Show when={route.show} fallback={<></>}>
+                                <li class={`navbar-item ${active(route.path)}`}><A href={`/${route.path}`}>{route.page}</A></li>
+                              </Show>
+                            )}
+                        </For>
                     </ul>
                 </div>
             </div>
