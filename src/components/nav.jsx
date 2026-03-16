@@ -18,7 +18,11 @@ export default function Nav() {
                         <For each={RouteData}>
                             {route => (
                               <Show when={route.show} fallback={<></>}>
-                                <li class={`navbar-item ${active(route.path)}`}><A href={`/${route.path}`}>{route.page}</A></li>
+                                <li class={`navbar-item ${active(route.path)}`}>
+                                    <A href={`/${route.path}`} end>
+                                        {route.page}
+                                    </A>
+                                </li>
                               </Show>
                             )}
                         </For>
