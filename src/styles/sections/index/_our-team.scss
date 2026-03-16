@@ -72,10 +72,15 @@
             height: 1.5rem;
             width: 1.5rem;
             color: var(--tx-secondary);
-            transition: color 0.2s;
+            transition: 0.2s;
 
+            //noinspection ALL
             &:hover {
               color: var(--tx-primary);
+
+              animation: pulse 2s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+              scale: 1.1;
+              text-shadow: 0 0 0 0.125rem hsla(var(--tx-secondary-val), .2);
             }
           }
         }
@@ -83,5 +88,13 @@
     }
 
 
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    scale: 0.9;
+  }
+  50% {
+    scale: 1.1;
   }
 }

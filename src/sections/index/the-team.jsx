@@ -1,5 +1,5 @@
 import TeamMemberCard from "~/components/team-member-card.jsx";
-import teamMembers from "~/jsondata/teamMembers.json";
+import teamMembers from "~/json-data/team-members.json";
 import {For} from "solid-js";
 
 
