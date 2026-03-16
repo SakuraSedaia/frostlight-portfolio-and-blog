@@ -1,0 +1,46 @@
+[
+  {
+    "page": "Home",
+    "path": "",
+    "description": "Frostlight Studios is a creative studio focused on high-quality content, community, and innovation.",
+    "show": true,
+    "hide_from_search": false,
+    "subnav": false,
+    "subpages": []
+  },
+  {
+    "page": "Projects",
+    "path": "projects",
+    "description": "Explore the various projects and initiatives by Frostlight Studios.",
+    "show": false,
+    "hide_from_search": true,
+    "subnav": false,
+    "subpages": [
+      {
+        "page": "Beginnings",
+        "path": "project/beginnings",
+        "description": "A Dark Fantasy story and one of Frostlight Studios' flagship projects.",
+        "show": true,
+        "hide_from_search": false
+      }
+    ]
+  },
+  {
+    "page": "Volunteer",
+    "path": "volunteer",
+    "description": "Join our team and help us build amazing experiences. We're always looking for passionate volunteers.",
+    "show": true,
+    "hide_from_search": false,
+    "subnav": false,
+    "subpages": []
+  },
+  {
+    "page": "Contact",
+    "path": "contact",
+    "description": "Get in touch with Frostlight Studios for inquiries, collaborations, or support.",
+    "show": true,
+    "hide_from_search": false,
+    "subnav": false,
+    "subpages": []
+  }
+]

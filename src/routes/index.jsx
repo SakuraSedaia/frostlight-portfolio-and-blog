@@ -1,5 +1,6 @@
 import { Suspense, ErrorBoundary } from "solid-js";
-import { Title } from "@solidjs/meta";
+import { Title, Meta } from "@solidjs/meta";
+import { getRouteMetadata } from "~/utils/route-metadata";
 
 // import Components
 import Header from "~/sections/header.jsx";
@@ -12,9 +13,11 @@ import Discord from "~/sections/index/discord.jsx";
 import OurProjects from "~/sections/index/our-projects.jsx";
 
 export default function Home() {
+	const route = getRouteMetadata("");
 	return (
 		<ErrorBoundary fallback={(err) => <div>Error: {err.message}</div>}>
-			<Title>Home - Frostlight Studios</Title>
+			<Title>{route.page} - Frostlight Studios</Title>
+			<Meta name="description" content={route.description} />
 			<Suspense fallback={<div>Loading...</div>}>
 				<Header img={"home"} credit={"Tundrabolt"} />
 				<main class={"body-container"}>
