@@ -24,7 +24,7 @@ export default function Home() {
 					<IndexAboutUs />
 					<TheTeam />
 					<Discord />
-d				</main>
+				</main>
 				<Footer />
 			</Suspense>
 		</ErrorBoundary>
