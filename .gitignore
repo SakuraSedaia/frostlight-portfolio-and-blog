@@ -1,12 +1,10 @@
 dist
-.wrangler
-.output
-.vercel
-.netlify
-.vinxi
+.wrangler/
+.output/
+.vercel/
+.netlify/
+.vinxi/
 app.config.timestamp_*.js
-*.hidden
-.logs
 
 # Environment
 .env
@@ -17,11 +15,10 @@ app.config.timestamp_*.js
 
 # IDEs and editors
 /.idea
-.project
-.classpath
+.project/
+.classpath/
 *.launch
 .settings/
-*.code-workspace
 
 # Temp
 gitignore
@@ -29,11 +26,6 @@ gitignore
 # System Files
 .DS_Store
 Thumbs.db
-/utils/renders/
-/utils/lib/
-/.output.txt
 
-# Sibling Project Sync
-/.junie/siblings/
-.hidden
-.compressed
+# My List
+.hidden/
