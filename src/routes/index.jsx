@@ -20,11 +20,11 @@ export default function Home() {
 			<Meta name="description" content={route.description} />
 			<Suspense fallback={<div>Loading...</div>}>
 				<Header img={"home"} credit={"Tundrabolt"} />
-				<main class={"body-container"}>
+				<main class={"body-container content-container"}>
 					<IndexAboutUs />
 					<TheTeam />
 					<Discord />
-				</main>
+d				</main>
 				<Footer />
 			</Suspense>
 		</ErrorBoundary>

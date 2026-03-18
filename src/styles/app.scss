@@ -2,13 +2,21 @@
 @use "fonts";
 @use "global";
 @use "tailwind-colors";
+@use "sedaia-design";
 
-// Components
+// General Sections
 @use "sections/header-footer";
+
 // Pages
 @use "pages/index/index";
 
-// Sections
+// Index Sections
 @use "sections/index/about";
 @use "sections/index/discord";
 @use "sections/index/our-team";
+
+// Volunteer Sections
+
+// Projects Sections
+
+// Contact Sections
