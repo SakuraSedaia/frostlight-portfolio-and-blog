@@ -7,7 +7,7 @@ export default function Nav() {
     const location = useLocation();
     const active = (path) => (path === location.pathname ? "nav-active" : "");
     return (
-        <nav>
+        <nav id={"navbar"}>
             <div class={"container"}>
                 <A href={"/"} class={"navbar-brand"}>
                     <img src={"/images/vectors/Frostlight-Fox-Logo.svg"} class={"logo-img"} alt={"Frostlight Studios"} />
